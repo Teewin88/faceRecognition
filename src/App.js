@@ -42,17 +42,17 @@ class App extends Component {
 
   render(){
     return (
-      <div className='ma3'>
-      <h1 className='navy'>FACE ANALYZER:</h1>
-      <p>Enter the URL to an image that includes a face or faces, then click
-      the <strong>Analyze face</strong> button.</p>
-      <br />
-      <div id="search">
-      Image to analyze:<SearchBox id='searchBox' searchChange={this.onSearchChange}/> 
-      <button className='f6 link dim br2 ph3 pv2 mb2 dib white bg-navy bn shadow-3' onClick={this.processImage}>Analyze Face</button>
-      </div>
-      <br/>
-      <ResponseArea imgSource={this.state.searchField} responseJSON={this.state.responseText}/>
+      <div className='ma3 tc'>
+        <h1 className='navy'>FACE ANALYZER:</h1>
+        <p>Enter the URL to an image that includes a face or faces, then click
+        the <strong>Analyze face</strong> button.</p>
+        <br />
+        <div className='justify-center flex'>
+          <SearchBox id='searchBox' searchChange={this.onSearchChange}/> 
+          <button className='f6 link dim br2 ph3 pv2 mb2 dib white bg-navy bn shadow-3' onClick={this.processImage}>Analyze Face</button>
+        </div>
+        <br/>
+        <ResponseArea imgSource={this.state.searchField} responseJSON={this.state.responseText}/>
       </div>
     );
   }

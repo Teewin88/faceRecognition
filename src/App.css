@@ -20,10 +20,7 @@
 #wrapper {
   width:1020px; 
 }
-#search {
-  display: flex;
-  align:center;
-}
+
 #searchInput {
   width: 500px;
 }
