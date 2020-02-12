@@ -14,7 +14,7 @@ class App extends Component {
   
  
     processImage = async(e)=> {
-    const API_KEY = "5a7ed134ff9a4dcdad09c852d6d2f168";
+    const API_KEY = process.env.REACT_APP_FACE_API_KEY
     const uriBase = "https://facialanalytics.cognitiveservices.azure.com/face/v1.0/detect?returnFaceId=true&returnFaceLandmarks=false&returnFaceAttributes=age%2Cgender%2CheadPose%2Csmile%2CfacialHair%2Cglasses%2Cemotion%2Chair%2Cmakeup%2Cocclusion%2Caccessories%2Cblur%2Cexposure%2Cnoise";
 
     fetch(uriBase, {
