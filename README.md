@@ -2,4 +2,4 @@ This project is based on Azure Face REST API: https://docs.microsoft.com/en-gb/a
 
 Changes made: 
  - Uses fetch() instead of XMLHttpRequest to make API calls. 
- - change css properties
+ - changed css properties
